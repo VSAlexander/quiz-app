@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const quizAPI = axios.create({
-  baseURL: `https://opentdb.com/`,
+  baseURL: "https://opentdb.com/api.php?",
 });
 
 // export const fetchSportsQA = async () => {
@@ -28,3 +28,6 @@ export const quizAPI = axios.create({
 //     console.log(error);
 //   }
 // };
+// api.js
+
+// https://opentdb.com/api.php?amount=${questionsQuantity}&category=${category}&difficulty=${difficulty}&type=${questionsType}

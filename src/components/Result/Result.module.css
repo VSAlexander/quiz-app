@@ -1,0 +1,76 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result__button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 0;
+
+  background-color: #1976d2;
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+
+  cursor: pointer;
+}
+
+.result__heading {
+  margin-bottom: 0;
+}
+
+.result__image {
+  width: 150px;
+  height: 150px;
+}
+
+.result__showAnswersButton {
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.result__showAnswersButton:hover {
+  background-color: #3e8e41;
+}
+
+.result__table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+.result__row {
+  display: flex;
+  border: 1px solid #ddd;
+}
+
+.result__row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.result__cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.result__cell:first-child {
+  width: 50%;
+  font-weight: bold;
+}
+
+.result__cell:nth-child(2),
+.result__cell:nth-child(3) {
+  width: 25%;
+}

@@ -1,24 +1,24 @@
 // @import-normalize; /* bring in normalize.css styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #9740bf;
+  background-color: #e97451;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.App {
+.question {
   width: 500px;
   border-radius: 30px;
   padding: 40px;
-  background-color: #fff;
+  background-color: #f5f5dc;
   position: relative;
 
   .result {
@@ -26,7 +26,7 @@ body {
 
     button {
       font-weight: bold;
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       border-radius: 30px;
       border: 0;
       padding: 15px 30px;
@@ -56,19 +56,16 @@ body {
       height: 100%;
       border-radius: 30px;
       width: 80%;
-      background: rgb(18, 231, 48);
+      background: #ffa07a;
       transition: all 0.3s ease-in-out;
-      background: linear-gradient(
-        90deg,
-        rgba(18, 231, 48, 1) 0%,
-        rgba(0, 212, 255, 1) 100%
-      );
+
+      background: linear-gradient(90deg, #e97451, #517ae9);
     }
   }
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     height: 50px;
     border-bottom-left-radius: 30px;
@@ -81,14 +78,14 @@ body {
   &:before {
     width: 95%;
     bottom: -10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(245, 245, 220, 0.8);
     z-index: 0;
   }
 
   &:after {
     width: 90%;
     bottom: -20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(245, 245, 220, 0.3);
     z-index: 1;
   }
 
@@ -114,3 +111,46 @@ body {
     }
   }
 }
+
+// @import-normalize; /* bring in normalize.css styles */
+
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+// body {
+//   margin: 0;
+//   font-family: "Roboto", sans-serif;
+//   background-color: #f7f7f7;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: 100vh;
+// }
+
+// h1 {
+//   margin: 0;
+//   font-size: 36px;
+//   font-weight: 700;
+//   color: #3f51b5;
+//   text-align: center;
+//   margin-bottom: 20px;
+// }
+
+// ul {
+//   list-style: none;
+//   padding: 0;
+
+//   li {
+//     padding: 15px;
+//     border-radius: 10px;
+//     margin-bottom: 10px;
+//     cursor: pointer;
+//     transition: all 0.1s ease-in-out;
+//     border: 2px solid rgba(0, 0, 0, 0.1);
+//     color: #3f51b5;
+//     font-weight: 500;
+
+//     &:hover {
+//       border: 2px solid rgba(0, 0, 0, 0.3);
+//     }
+//   }
+// }
