@@ -47,7 +47,8 @@
 .result__table {
   margin-top: 20px;
   border-collapse: collapse;
-  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .result__row {
@@ -73,4 +74,63 @@
 .result__cell:nth-child(2),
 .result__cell:nth-child(3) {
   width: 25%;
+}
+
+@media screen and (max-width: 399px) {
+  .result__table {
+    font-size: 0.8em;
+  }
+  .result__cell {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .result__cell:first-child {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .result__heading {
+    font-size: 20px;
+  }
+
+  .result__button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .result__table {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  .result__cell {
+    width: 100%;
+    font-size: 1em;
+  }
+  .result__cell:first-child {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .result__heading {
+    font-size: 22px;
+  }
+
+  .result__button {
+    padding: 15px 25px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .result__table {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .result__table {
+    width: 60%;
+  }
 }

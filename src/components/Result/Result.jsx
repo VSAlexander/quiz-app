@@ -15,32 +15,38 @@ export function Result({
   };
 
   return (
-    <div className={css.result}>
-      <img
-        className={css.result__image}
-        src={
-          correctAnswers === 0
-            ? "https://cdn-icons-png.flaticon.com/512/166/166527.png"
-            : "https://cdn-icons-png.flaticon.com/512/3322/3322105.png"
-        }
-        alt="success"
-      />
-      <h2 className={css.result__heading}>
-        You got {correctAnswers} correct{" "}
-        {correctAnswers === 1 ? "answer" : "answers"} out of {questionsLength}
-      </h2>
-      <button className={css.result__button} onClick={handlePlayAgain}>
-        Try again
-      </button>{" "}
-      <button
-        className={css.result__button}
-        onClick={() => window.location.reload(false)}
-      >
-        Start new game
-      </button>
-      <button className={css.result__showAnswersButton} onClick={toggleAnswers}>
-        {showAnswers ? "Hide answers" : "Show answers"}
-      </button>
+    <>
+      <div className={css.result}>
+        <img
+          className={css.result__image}
+          src={
+            correctAnswers === 0
+              ? "https://cdn-icons-png.flaticon.com/512/166/166527.png"
+              : "https://cdn-icons-png.flaticon.com/512/3322/3322105.png"
+          }
+          alt="success"
+        />
+        <h2 className={css.result__heading}>
+          You got {correctAnswers} correct{" "}
+          {correctAnswers === 1 ? "answer" : "answers"} out of {questionsLength}
+        </h2>
+        <button className={css.result__button} onClick={handlePlayAgain}>
+          Try again
+        </button>{" "}
+        <button
+          className={css.result__button}
+          onClick={() => window.location.reload(false)}
+        >
+          Start new game
+        </button>
+        <button
+          className={css.result__showAnswersButton}
+          onClick={toggleAnswers}
+        >
+          {showAnswers ? "Hide answers" : "Show answers"}
+        </button>
+      </div>
+
       {showAnswers && (
         <div className={css.result__table}>
           <div className={css.result__row}>
@@ -66,6 +72,6 @@ export function Result({
           ))}
         </div>
       )}
-    </div>
+    </>
   );
 }
